@@ -1,16 +1,26 @@
-## 🇧🇷 Sobre  
-Bem-vindo ao meu portfólio musical!  
-Sou **XAMPSBEATZ**, beatmaker aficionado por criar instrumentais que misturam criatividade, ritmo e identidade única.  
-Aqui você encontra alguns dos meus projetos, explorando diferentes estilos e sonoridades.  
+XAMPSBEATZ — Music Portfolio
 
-Produzir música é meu hobby favorito e este espaço foi criado para compartilhar minhas ideias sonoras e evoluções como produtor independente.
+Portfólio musical pessoal desenvolvido para apresentar e compartilhar beats produzidos por XAMPSBEATZ.
 
-## 🇺🇸 About  
-Welcome to my music portfolio!  
-I’m **XAMPSBEATZ**, a beatmaker passionate about crafting instrumentals that blend creativity, rhythm, and a unique identity.  
-Here you’ll find some of my projects, exploring different styles and sounds.  
+🇧🇷 Sobre
 
-Music production is my favorite hobby, and this space was created to share my sonic ideas and growth as an independent producer.
+Bem-vindo ao portfólio musical do XAMPSBEATZ.
+
+Este projeto foi criado para compartilhar minha produção independente e oferecer um espaço onde diferentes beats podem ser explorados e ouvidos online.
+
+Minha produção transita principalmente entre rap, hip-hop e trap, explorando diferentes atmosferas, ritmos e sonoridades. Mais do que apenas apresentar faixas, este portfólio representa minha evolução e minha identidade como produtor musical independente.
+
+A música é meu principal hobby e este projeto reúne parte da minha jornada criativa na produção de instrumentais.
+
+🇺🇸 About
+
+Welcome to the XAMPSBEATZ music portfolio.
+
+This project was created to share my independent music production and provide a space where different beats can be explored and listened to online.
+
+My production mainly explores rap, hip-hop, and trap, combining different atmospheres, rhythms, and sounds. More than simply showcasing tracks, this portfolio represents my creative journey and identity as an independent music producer.
+
+Music is my main hobby, and this project brings together part of my journey in instrumental music production.
 
 ---
 
@@ -20,8 +30,11 @@ Music production is my favorite hobby, and this space was created to share my so
 
 ---
 
-## 🌐 Acesse meu portfólio - Check out my portfolio 
-🔗 [XAMPSBEATZ](https://alexandrexan.github.io/xampsbeatz/)  
+🎧 Acesse o portfólio
+
+Explore o projeto e ouça os beats online:
+
+🔗 XAMPSBEATZ — Music Portfolio
 
 ## 📬 Contato - Contact
 - Email: xampsbeatz@gmail.com  
