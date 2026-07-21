@@ -1,10 +1,10 @@
-XAMPSBEATZ — Music Portfolio
+**XAMPSBEATZ — Music Portfolio**
 
 Portfólio musical pessoal desenvolvido para apresentar e compartilhar beats produzidos por XAMPSBEATZ.
 
 #
 
-🇧🇷 Sobre
+**🇧🇷 Sobre**
 
 Bem-vindo ao portfólio musical do XAMPSBEATZ.
 
@@ -16,7 +16,7 @@ A música é meu principal hobby e este projeto reúne parte da minha jornada cr
 
 #
 
-🇺🇸 About
+**🇺🇸 About**
 
 Welcome to the XAMPSBEATZ music portfolio.
 
@@ -28,19 +28,19 @@ Music is my main hobby, and this project brings together part of my journey in i
 
 #
 
-Preview
+**Preview**
 
 ![preview do projeto](./previa-gif/xamps.gif)
 
 #
 
-🎧 Acesse o portfólio
+**🎧 Acesse o portfólio**
 
 Explore o projeto e ouça os beats online:
 
 🔗 [XAMPSBEATZ](https://alexandrexan.github.io/xampsbeatz/)
 
-## 📬 Contato - Contact
+**📬 Contato - Contact**
 - Email: xampsbeatz@gmail.com  
 - SoundCloud: [soundcloud.com/xampsbeatz](https://soundcloud.com/xampsbeatz/sets/xampsbeatz)  
 - YouTube: [youtube/xampsbeatz](https://www.youtube.com/@xampsbeatz)
