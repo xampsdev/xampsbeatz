@@ -46,3 +46,9 @@ Explore o projeto e ouça os beats online:
 - YouTube: [youtube/xampsbeatz](https://www.youtube.com/@xampsbeatz)
 
 #
+
+## Autor
+
+Desenvolvido por **XAN**
+
+- GitHub: [@xampsdev](https://github.com/xampsdev)
