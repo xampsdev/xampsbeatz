@@ -24,23 +24,29 @@ h1 {
 .masked-text {
   font-size: 6rem;
   color: transparent;
-  background-image: url(imagem/abstract-rainbow-glitch.png);
-  background-size: 70%;
-  /* Enlarged for smooth animation */
-  background-position: 0 50%;
+  background-image: url(imagem/abstract-rainbow-glitch.webp);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center top;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: animate-background 5s infinite alternate linear;
+  animation: artwork-pan 14s ease-in-out infinite alternate;
 }
 
-@keyframes animate-background {
+@keyframes artwork-pan {
   0% {
-    background-position: 0 50%;
+    background-position: center top;
   }
 
   100% {
-    background-position: 100% 50%;
+    background-position: center bottom;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .masked-text {
+    animation: none;
   }
 }
 
@@ -366,7 +372,6 @@ footer {
 @media (max-width: 900px) {
   .masked-text {
     font-size: 4rem;
-    background-size: 120%;
   }
 }
 
@@ -378,7 +383,6 @@ footer {
   .masked-text {
     font-size: 2.5rem;
     padding: 20px 0;
-    background-size: 200%;
   }
 
   h1 {
