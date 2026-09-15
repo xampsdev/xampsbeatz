@@ -1,54 +1,72 @@
-**XAMPSBEATZ — Music Portfolio**
+# XAMPSBEATZ — Portfólio musical
 
-Portfólio musical pessoal desenvolvido para apresentar e compartilhar beats produzidos por XAMPSBEATZ.
+Site estático para apresentar o trabalho de XAMPSBEATZ como beatmaker de rap, hip-hop e trap. O projeto reúne apresentação profissional, playlists incorporadas e canais de contato em uma experiência responsiva e multilíngue.
 
-#
+> Projeto de estudo e portfólio, desenvolvido sem frameworks ou processo de build.
 
-**🇧🇷 Sobre**
+![Prévia do projeto](./previa-gif/xamps.gif)
 
-Bem-vindo ao portfólio musical do XAMPSBEATZ.
+## Acesso
 
-Este projeto foi criado para compartilhar minha produção independente e oferecer um espaço onde diferentes beats podem ser explorados e ouvidos online.
+[Ver o site publicado](https://xampsdev.github.io/xampsbeatz/)
 
-Minha produção transita principalmente entre rap, hip-hop e trap, explorando diferentes atmosferas, ritmos e sonoridades. Mais do que apenas apresentar faixas, este portfólio representa minha evolução e minha identidade como produtor musical independente.
+## Funcionalidades
 
-A música é meu principal hobby e este projeto reúne parte da minha jornada criativa na produção de instrumentais.
+- Apresentação do produtor e de sua linha musical.
+- Seleção de idioma em português, inglês e espanhol.
+- Carregamento sob demanda das playlists do SoundCloud e YouTube.
+- Players incorporados com `loading="lazy"`.
+- Layout responsivo para desktop, tablet e celular.
+- Animação respeitando a preferência de redução de movimento do sistema.
+- Estados de foco visíveis e atributos ARIA nos controles interativos.
+- Metadados básicos para SEO e compartilhamento social.
 
-#
+## Tecnologias e habilidades aplicadas
 
-**🇺🇸 About**
+| Área | Aplicação no projeto |
+| --- | --- |
+| HTML5 | Estrutura semântica, metadados, favicon e acessibilidade básica. |
+| CSS3 | Layout responsivo, flexbox, media queries, animações, gradientes e tipografia externa. |
+| JavaScript | Renderização dinâmica dos players, eventos, troca de idioma e ano automático no rodapé. |
+| Internacionalização | Conteúdo em PT-BR, inglês e espanhol centralizado em `traducoes.js`. |
+| Integrações web | Embeds oficiais do SoundCloud e YouTube. |
+| Boas práticas | Carregamento preguiçoso, `noopener noreferrer`, foco por teclado e `prefers-reduced-motion`. |
+| Git e GitHub Pages | Versionamento e publicação de um site estático. |
 
-Welcome to the XAMPSBEATZ music portfolio.
+## Estrutura
 
-This project was created to share my independent music production and provide a space where different beats can be explored and listened to online.
+```text
+.
+├── favicon/          # Ícones e manifesto do site
+├── imagem/           # Arte usada no título
+├── previa-gif/       # Demonstração visual do projeto
+├── index.html        # Estrutura e metadados da página
+├── style.css         # Estilos, responsividade e animações
+├── script.js         # Controle dos players incorporados
+└── traducoes.js      # Textos e lógica de tradução
+```
 
-My production mainly explores rap, hip-hop, and trap, combining different atmospheres, rhythms, and sounds. More than simply showcasing tracks, this portfolio represents my creative journey and identity as an independent music producer.
+## Como executar localmente
 
-Music is my main hobby, and this project brings together part of my journey in instrumental music production.
+Não há dependências para instalar. Clone o repositório e abra `index.html` em um navegador.
 
-#
+```bash
+git clone https://github.com/xampsdev/xampsbeatz.git
+cd xampsbeatz
+```
 
-**Preview**
+Para carregar fontes, ícones, bandeiras e os players, é necessária conexão com a internet.
 
-![preview do projeto](./previa-gif/xamps.gif)
+## Canais
 
-#
-
-**🎧 Acesse o portfólio**
-
-Explore o projeto e ouça os beats online:
-
-🔗 [XAMPSBEATZ](https://xampsdev.github.io/xampsbeatz/)
-
-**📬 Contato - Contact**
-- Email: xampsbeatz@gmail.com  
-- SoundCloud: [soundcloud.com/xampsbeatz](https://soundcloud.com/xampsbeatz/sets/xampsbeatz)  
-- YouTube: [youtube/xampsbeatz](https://www.youtube.com/@xampsbeatz)
-
-#
+- E-mail: [xampsbeatz@gmail.com](mailto:xampsbeatz@gmail.com)
+- SoundCloud: [xampsbeatz](https://soundcloud.com/xampsbeatz/sets/xampsbeatz)
+- YouTube: [@xampsbeatz](https://www.youtube.com/@xampsbeatz)
 
 ## Autor
 
-Desenvolvido por **XAN**
+Desenvolvido por [XAN (@xampsdev)](https://github.com/xampsdev).
 
-- GitHub: [@xampsdev](https://github.com/xampsdev)
+## Licença
+
+Distribuído sob a [licença MIT](./LICENSE).
