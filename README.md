@@ -38,7 +38,7 @@ Music is my main hobby, and this project brings together part of my journey in i
 
 Explore o projeto e ouça os beats online:
 
-🔗 [XAMPSBEATZ](https://alexandrexan.github.io/xampsbeatz/)
+🔗 [XAMPSBEATZ](https://xampsdev.github.io/xampsbeatz/)
 
 **📬 Contato - Contact**
 - Email: xampsbeatz@gmail.com  
