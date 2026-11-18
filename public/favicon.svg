@@ -1,21 +1,129 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="XAMPSBEATZ">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="XAMPSBEATZ">
   <defs>
-    <linearGradient id="glitchPrism" x1="8" y1="8" x2="56" y2="56" gradientUnits="userSpaceOnUse">
+    <!-- Multicolor border gradient: yellow/coral -> hot pink -> violet -> cyan/blue -->
+    <linearGradient id="borderPrism" x1="32" y1="32" x2="480" y2="480" gradientUnits="userSpaceOnUse">
       <stop offset="0%" stop-color="#FFD600" />
-      <stop offset="35%" stop-color="#FF0099" />
-      <stop offset="70%" stop-color="#A81CFF" />
+      <stop offset="22%" stop-color="#FF5E3A" />
+      <stop offset="48%" stop-color="#FF0099" />
+      <stop offset="74%" stop-color="#A81CFF" />
       <stop offset="100%" stop-color="#00E5FF" />
     </linearGradient>
+
+    <!-- Primary X fill: vibrant coral -> hot pink -> magenta -> violet -->
+    <linearGradient id="xCoreGradient" x1="112" y1="104" x2="400" y2="408" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FF6B4A" />
+      <stop offset="34%" stop-color="#FF007A" />
+      <stop offset="68%" stop-color="#D900FF" />
+      <stop offset="100%" stop-color="#7B1CFF" />
+    </linearGradient>
+
+    <!-- Inner highlight stroke for modern volumetric edge -->
+    <linearGradient id="xInnerRim" x1="120" y1="104" x2="392" y2="408" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFE184" stop-opacity="0.75" />
+      <stop offset="45%" stop-color="#FF77CC" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#66F0FF" stop-opacity="0.7" />
+    </linearGradient>
+
+    <!-- Ambient center pulse behind the X -->
+    <radialGradient id="ambientPulse" cx="50%" cy="50%" r="48%">
+      <stop offset="0%" stop-color="#FF0099" stop-opacity="0.28" />
+      <stop offset="52%" stop-color="#A81CFF" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#09090B" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Outer + inner glow filter for the X -->
+    <filter id="xGlow" x="-25%" y="-25%" width="150%" height="150%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="14" result="blurOuter" />
+      <feColorMatrix
+        in="blurOuter"
+        type="matrix"
+        values="1 0 0 0 0.12
+                0 0.35 0 0 0
+                0 0 1 0 0.18
+                0 0 0 0.85 0"
+        result="coloredGlow"
+      />
+      <feMerge>
+        <feMergeNode in="coloredGlow" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Subtle inner glow overlay -->
+    <filter id="xInnerGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="arithmetic" k2="1" k3="0.35" />
+    </filter>
+
+    <!-- Stylized glitch / audio-spike cutouts on the X edges -->
+    <mask id="xGlitchMask">
+      <rect width="512" height="512" fill="#FFFFFF" />
+      <!-- Upper-left rhythmic horizontal audio slice -->
+      <polygon points="122,162 178,162 184,172 130,172" fill="#000000" />
+      <!-- Mid-left audio spike notch -->
+      <polygon points="184,242 216,242 222,250 190,250" fill="#000000" />
+      <!-- Upper-right sharp transient cut -->
+      <polygon points="348,144 396,144 388,154 342,154" fill="#000000" />
+      <!-- Mid-right audio spike notch -->
+      <polygon points="292,262 326,262 320,270 286,270" fill="#000000" />
+      <!-- Lower-right rhythmic horizontal audio slice -->
+      <polygon points="328,340 388,340 382,350 322,350" fill="#000000" />
+    </mask>
   </defs>
-  <rect width="64" height="64" rx="14" fill="#09090B" />
-  <rect x="2" y="2" width="60" height="60" rx="12" fill="none" stroke="url(#glitchPrism)" stroke-opacity="0.35" stroke-width="1.5" />
-  <!-- Bold geometric X -->
-  <path
-    d="M12 18h7.5l5.5 9.2L30.5 18H38l-8.8 14L38.4 46h-7.6L25 36.4 19.2 46h-7.6l9.2-14L12 18z"
-    fill="url(#glitchPrism)"
+
+  <!-- Rounded dark studio base -->
+  <rect x="8" y="8" width="496" height="496" rx="124" fill="#09090B" />
+  <rect x="8" y="8" width="496" height="496" rx="124" fill="url(#ambientPulse)" />
+
+  <!-- Thin multicolor gradient border -->
+  <rect
+    x="14"
+    y="14"
+    width="484"
+    height="484"
+    rx="118"
+    fill="none"
+    stroke="url(#borderPrism)"
+    stroke-width="10"
   />
-  <!-- Stylized high-contrast glitch waveform bars forming B-profile -->
-  <rect x="41" y="18" width="5" height="28" rx="2" fill="#00E5FF" />
-  <rect x="48" y="22" width="5" height="9" rx="2" fill="#FF0099" />
-  <rect x="48" y="34" width="5" height="12" rx="2" fill="#FFD600" />
+
+  <!-- Chromatic glitch offset echoes (beatmaker waveform energy) -->
+  <g opacity="0.72" mask="url(#xGlitchMask)">
+    <!-- Cyan offset echo -->
+    <path
+      d="M116 104H194L256 196L318 104H396L294 256L396 408H318L256 316L194 408H116L218 256L116 104Z"
+      fill="#00E5FF"
+      transform="translate(7, 3)"
+    />
+    <!-- Gold/Coral offset echo -->
+    <path
+      d="M116 104H194L256 196L318 104H396L294 256L396 408H318L256 316L194 408H116L218 256L116 104Z"
+      fill="#FFD600"
+      transform="translate(-6, -3)"
+      opacity="0.55"
+    />
+  </g>
+
+  <!-- Centered stylized uppercase X with outer glow and audio-spike/glitch cuts -->
+  <g filter="url(#xGlow)">
+    <path
+      d="M116 104H194L256 196L318 104H396L294 256L396 408H318L256 316L194 408H116L218 256L116 104Z"
+      fill="url(#xCoreGradient)"
+      mask="url(#xGlitchMask)"
+    />
+    <!-- Crisp inner highlight rim -->
+    <path
+      d="M123 108H191.5L256 203.5L320.5 108H389L289 256L389 404H320.5L256 308.5L191.5 404H123L223 256L123 108Z"
+      fill="none"
+      stroke="url(#xInnerRim)"
+      stroke-width="3.5"
+      stroke-linejoin="miter"
+      mask="url(#xGlitchMask)"
+      filter="url(#xInnerGlow)"
+    />
+  </g>
+
+  <!-- Subtle floating audio-spike micro-bars reinforcing the beatmaker cut aesthetic -->
+  <rect x="92" y="162" width="22" height="10" rx="3" fill="#FFD600" opacity="0.9" />
+  <rect x="398" y="340" width="22" height="10" rx="3" fill="#00E5FF" opacity="0.9" />
 </svg>
