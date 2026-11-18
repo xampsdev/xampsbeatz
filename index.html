@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="pt-br">
+<html lang="pt-BR" class="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -23,148 +23,20 @@
     <meta property="og:type" content="website" />
     <meta
       property="og:url"
-      content="https://alexandrexan.github.io/xampsbeatz/"
+      content="https://xampsdev.github.io/xampsbeatz/"
     />
     <meta property="og:locale" content="pt_BR" />
     <meta property="og:site_name" content="XAMPSBEATZ" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="favicon/apple-touch-icon.png"
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
     />
-    <link rel="icon" href="favicon/favicon.ico" sizes="any" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link rel="icon" type="image/svg+xml" href="%BASE_URL%favicon.svg" />
   </head>
-
-  <body>
-    <header>
-      <h1 class="masked-text">XAMPSBEATZ</h1>
-    </header>
-
-    <div class="language-switcher">
-      <button
-        type="button"
-        class="lang-btn"
-        data-lang="pt-BR"
-        aria-label="Português"
-        aria-pressed="false"
-      >
-        <img src="https://flagcdn.com/w40/br.png" alt="Português" />
-      </button>
-      <button
-        type="button"
-        class="lang-btn"
-        data-lang="en"
-        aria-label="English"
-        aria-pressed="false"
-      >
-        <img src="https://flagcdn.com/w40/us.png" alt="English" />
-      </button>
-      <button
-        type="button"
-        class="lang-btn"
-        data-lang="es"
-        aria-label="Español"
-        aria-pressed="false"
-      >
-        <img src="https://flagcdn.com/w40/es.png" alt="Español" />
-      </button>
-    </div>
-
-    <main>
-      <section class="sobre">
-        <h2>Quem é xampsbeatz?</h2>
-        <p>
-          Beatmaker com mais de 10 anos de experiência, XAMPSBEATZ transforma
-          seu hobby favorito — produzir música e dar vida a ideias — em beats
-          que unem criatividade e técnica. Utilizando o FL Studio, dedica-se
-          principalmente a rap, hip-hop e trap, explorando novas texturas e
-          sonoridades para entregar produções autênticas e impactantes.
-        </p>
-      </section>
-
-      <section>
-        <button
-          type="button"
-          id="btn-carregar-playlist"
-          class="btn-sc"
-          aria-expanded="false"
-        >
-          <img
-            src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/soundcloud.svg"
-            alt="SoundCloud"
-            class="btn-icon"
-          />
-          Carregar Playlist SoundCloud
-        </button>
-        <div id="playlist-container"></div>
-
-        <button
-          type="button"
-          id="btn-carregar-youtube"
-          class="btn-yt"
-          aria-expanded="false"
-        >
-          <img
-            src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg"
-            alt="YouTube"
-            class="btn-icon"
-          />
-          Carregar Playlist YouTube
-        </button>
-        <div id="youtube-container"></div>
-      </section>
-    </main>
-
-    <footer>
-      <div class="footer-content">
-        <p>
-          &copy; <span id="year"></span> XAMPSBEATZ &mdash; Todos os direitos
-          reservados.
-        </p>
-        <div class="footer-social">
-          <a
-            href="https://soundcloud.com/xampsbeatz"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="SoundCloud"
-          >
-            <img
-              src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/soundcloud.svg"
-              alt="SoundCloud"
-            />
-          </a>
-          <a
-            href="https://www.youtube.com/@xampsbeatz"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="YouTube"
-          >
-            <img
-              src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg"
-              alt="YouTube"
-            />
-          </a>
-        </div>
-      </div>
-    </footer>
-    <script>
-      document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
-    <script src="traducoes.js"></script>
-    <script src="script.js"></script>
+  <body class="bg-[#07070B] text-zinc-100 antialiased selection:bg-[#FF0099] selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

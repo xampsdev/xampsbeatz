@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="XAMPSBEATZ">
+  <defs>
+    <linearGradient id="glitchPrism" x1="8" y1="8" x2="56" y2="56" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFD600" />
+      <stop offset="35%" stop-color="#FF0099" />
+      <stop offset="70%" stop-color="#A81CFF" />
+      <stop offset="100%" stop-color="#00E5FF" />
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="#09090B" />
+  <rect x="2" y="2" width="60" height="60" rx="12" fill="none" stroke="url(#glitchPrism)" stroke-opacity="0.35" stroke-width="1.5" />
+  <!-- Bold geometric X -->
+  <path
+    d="M12 18h7.5l5.5 9.2L30.5 18H38l-8.8 14L38.4 46h-7.6L25 36.4 19.2 46h-7.6l9.2-14L12 18z"
+    fill="url(#glitchPrism)"
+  />
+  <!-- Stylized high-contrast glitch waveform bars forming B-profile -->
+  <rect x="41" y="18" width="5" height="28" rx="2" fill="#00E5FF" />
+  <rect x="48" y="22" width="5" height="9" rx="2" fill="#FF0099" />
+  <rect x="48" y="34" width="5" height="12" rx="2" fill="#FFD600" />
+</svg>

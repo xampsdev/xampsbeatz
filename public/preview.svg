@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 640" width="1280" height="640" role="img" aria-label="XAMPSBEATZ Studio Portfolio Preview">
+  <defs>
+    <linearGradient id="prismWordmark" x1="420" y1="130" x2="860" y2="210" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFD600" />
+      <stop offset="32%" stop-color="#FF0099" />
+      <stop offset="68%" stop-color="#A81CFF" />
+      <stop offset="100%" stop-color="#00E5FF" />
+    </linearGradient>
+    <linearGradient id="btnGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF0099" />
+      <stop offset="100%" stop-color="#7C2AE8" />
+    </linearGradient>
+    <linearGradient id="ytGlow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1E1328" />
+      <stop offset="100%" stop-color="#0A0B10" />
+    </linearGradient>
+  </defs>
+
+  <!-- Canvas -->
+  <rect width="1280" height="640" fill="#07070B" />
+
+  <!-- Top Navigation Bar -->
+  <rect width="1280" height="56" fill="#07070B" />
+  <line x1="0" y1="56" x2="1280" y2="56" stroke="#262838" stroke-width="1" />
+  <text x="120" y="34" fill="#FFFFFF" font-family="Outfit, ui-sans-serif, system-ui, sans-serif" font-size="16" font-weight="700" letter-spacing="-0.02em">XAMPSBEATZ</text>
+  <text x="1040" y="33" fill="#A1A1AA" font-family="Plus Jakarta Sans, ui-sans-serif, system-ui, sans-serif" font-size="13" font-weight="500">Playlists</text>
+  <text x="1124" y="33" fill="#A1A1AA" font-family="Plus Jakarta Sans, ui-sans-serif, system-ui, sans-serif" font-size="13" font-weight="500">Sobre</text>
+
+  <!-- Kicker & Language Switcher Row -->
+  <text x="120" y="96" fill="#A1A1AA" font-family="Plus Jakarta Sans, ui-sans-serif, system-ui, sans-serif" font-size="12" font-weight="500">São Paulo · Trap, Hip Hop &amp; Rap · FL Studio</text>
+  <rect x="1046" y="76" width="114" height="30" rx="8" fill="#11121A" stroke="#262838" stroke-width="1" />
+  <rect x="1050" y="80" width="60" height="22" rx="6" fill="url(#btnGradient)" />
+  <text x="1080" y="95" text-anchor="middle" fill="#FFFFFF" font-family="Plus Jakarta Sans, ui-sans-serif, system-ui, sans-serif" font-size="11" font-weight="600">PT-BR</text>
+  <text x="1134" y="95" text-anchor="middle" fill="#A1A1AA" font-family="Plus Jakarta Sans, ui-sans-serif, system-ui, sans-serif" font-size="11" font-weight="500">EN</text>
+
+  <!-- Centered Hero Wordmark & Headline -->
+  <text x="640" y="176" text-anchor="middle" fill="url(#prismWordmark)" font-family="Outfit, ui-sans-serif, system-ui, sans-serif" font-size="62" font-weight="800" letter-spacing="-0.03em">XAMPSBEATZ</text>
+  <text x="640" y="222" text-anchor="middle" fill="#FFFFFF" font-family="Outfit, ui-sans-serif, system-ui, sans-serif" font-size="28" font-weight="700" letter-spacing="-0.02em">Beats originais com peso, textura e identidade.</text>
+  <text x="640" y="252" text-anchor="middle" fill="#A1A1AA" font-family="Plus Jakarta Sans, ui-sans-serif, system-ui, sans-serif" font-size="14">Mais de 10 anos transformando ideias em instrumentais autorais.</text>
+
+  <!-- Hero CTA Button -->
+  <rect x="562" y="272" width="156" height="38" rx="8" fill="url(#btnGradient)" opacity="0.18" />
+  <rect x="562" y="272" width="156" height="38" rx="8" fill="#11121A" stroke="#262838" stroke-width="1" />
+  <text x="632" y="295" text-anchor="middle" fill="#F4F4F5" font-family="Plus Jakarta Sans, ui-sans-serif, system-ui, sans-serif" font-size="13" font-weight="500">Ouvir Playlists</text>
+  <path d="M694 287l6 6m0 0v-5m0 5h-5" stroke="#00E5FF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+
+  <!-- 3-Column Studio Overview Strip -->
+  <line x1="120" y1="334" x2="1160" y2="334" stroke="#262838" stroke-width="1" />
+  <line x1="120" y1="398" x2="1160" y2="398" stroke="#262838" stroke-width="1" />
+
+  <text x="120" y="362" fill="#FFD600" font-family="Outfit, ui-sans-serif, system-ui, sans-serif" font-size="17" font-weight="600">10+ Anos</text>
+  <text x="120" y="381" fill="#A1A1AA" font-family="Plus Jakarta Sans, ui-sans-serif, system-ui, sans-serif" font-size="12">Produção em FL Studio</text>
+
+  <text x="476" y="362" fill="#FF0099" font-family="Outfit, ui-sans-serif, system-ui, sans-serif" font-size="17" font-weight="600">Trap &amp; Boom Bap</text>
+  <text x="476" y="381" fill="#A1A1AA" font-family="Plus Jakarta Sans, ui-sans-serif, system-ui, sans-serif" font-size="12">Subgêneros autorais</text>
+
+  <text x="832" y="362" fill="#00E5FF" font-family="Outfit, ui-sans-serif, system-ui, sans-serif" font-size="17" font-weight="600">SoundCloud &amp; YouTube</text>
+  <text x="832" y="381" fill="#A1A1AA" font-family="Plus Jakarta Sans, ui-sans-serif, system-ui, sans-serif" font-size="12">Streaming integrado</text>
+
+  <!-- Official Playlists Section Preview -->
+  <text x="120" y="434" fill="#FFFFFF" font-family="Outfit, ui-sans-serif, system-ui, sans-serif" font-size="20" font-weight="700">Playlists &amp; Vídeos Oficiais</text>
+
+  <!-- Left Card: SoundCloud On-Demand -->
+  <rect x="120" y="452" width="504" height="162" rx="14" fill="#11121A" stroke="#262838" stroke-width="1" />
+  <circle cx="148" cy="478" r="7" fill="#FF5500" />
+  <text x="164" y="483" fill="#FFFFFF" font-family="Outfit, ui-sans-serif, system-ui, sans-serif" font-size="15" font-weight="600">Playlist SoundCloud</text>
+  <text x="598" y="482" text-anchor="end" fill="#A1A1AA" font-family="Plus Jakarta Sans, ui-sans-serif, system-ui, sans-serif" font-size="11">@xampsbeatz</text>
+  <rect x="140" y="498" width="464" height="98" rx="10" fill="#0A0B10" stroke="#262838" stroke-width="1" />
+  <rect x="278" y="531" width="188" height="32" rx="8" fill="#FF5500" />
+  <text x="372" y="551" text-anchor="middle" fill="#FFFFFF" font-family="Plus Jakarta Sans, ui-sans-serif, system-ui, sans-serif" font-size="12" font-weight="600">Carregar Player SoundCloud</text>
+
+  <!-- Right Card: Lite YouTube Embed -->
+  <rect x="656" y="452" width="504" height="162" rx="14" fill="#11121A" stroke="#262838" stroke-width="1" />
+  <rect x="676" y="471" width="16" height="12" rx="3" fill="#FF0000" />
+  <text x="700" y="483" fill="#FFFFFF" font-family="Outfit, ui-sans-serif, system-ui, sans-serif" font-size="15" font-weight="600">Playlist YouTube</text>
+  <text x="1136" y="482" text-anchor="end" fill="#A1A1AA" font-family="Plus Jakarta Sans, ui-sans-serif, system-ui, sans-serif" font-size="11">Abrir Canal no YouTube</text>
+  <rect x="676" y="498" width="464" height="98" rx="10" fill="url(#ytGlow)" stroke="#262838" stroke-width="1" />
+  <circle cx="908" cy="542" r="18" fill="#FF0000" />
+  <polygon points="903,534 903,550 916,542" fill="#FFFFFF" />
+  <text x="908" y="578" text-anchor="middle" fill="#E4E4E7" font-family="Plus Jakarta Sans, ui-sans-serif, system-ui, sans-serif" font-size="11" font-weight="500">Clique para reproduzir a playlist no YouTube</text>
+</svg>

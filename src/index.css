@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --color-glitch-pink: #FF0099;
+  --color-glitch-violet: #A81CFF;
+  --color-glitch-cyan: #00E5FF;
+  --color-glitch-gold: #FFD600;
+  --color-soundcloud: #FF5500;
+  --color-youtube: #FF0000;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background-color: #07070B;
+    color: #f4f4f5;
+    font-family: var(--font-sans);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.masked-wordmark {
+  color: transparent;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center 40%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: artworkPan 14s ease-in-out infinite alternate;
+}
+
+@keyframes artworkPan {
+  0% {
+    background-position: center 15%;
+  }
+  100% {
+    background-position: center 85%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .masked-wordmark {
+    animation: none;
+    background-position: center center;
+  }
+}
