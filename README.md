@@ -6,7 +6,9 @@
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4-06B6D4?style=flat-square&logo=tailwindcss&logoColor=ffffff)](https://tailwindcss.com/)
 [![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-Live-09090B?style=flat-square&logo=github&logoColor=ffffff)](https://xampsdev.github.io/xampsbeatz/)
 
-![XAMPSBEATZ Preview](./public/preview.png)
+![XAMPSBEATZ Preview](./public/preview.gif)
+
+*Prévia animada destacando o efeito líquido customizado **"Gooey Marquee"** renderizado em React na seção Hero.*
 
 Portfólio musical de **XAMPSBEATZ** — beatmaker e produtor especializado em **Trap, Hip Hop e Rap** com mais de 10 anos de experiência em **FL Studio**.
 
@@ -61,7 +63,7 @@ As evoluções visuais, auditorias de código e refatorações do repositório s
 │       └── deploy.yml          # Pipeline CI/CD para GitHub Pages
 ├── public/
 │   ├── favicon.svg             # Favicon vetorial "X" com identidade de beatmaker
-│   └── preview.svg             # Arte vetorial de preview do projeto
+│   └── preview.gif             # Prévia animada do portfólio e do efeito Gooey Marquee
 ├── src/
 │   ├── assets/
 │   │   └── images/             # Capa fallback para o embed do YouTube
