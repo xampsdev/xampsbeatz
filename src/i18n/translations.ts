@@ -1,7 +1,5 @@
 import type { Language, TranslationDictionary } from '../types';
 
-export type { Language, TranslationDictionary };
-
 export const translations: Record<Language, TranslationDictionary> = {
   'pt-BR': {
     nav: {
@@ -26,8 +24,7 @@ export const translations: Record<Language, TranslationDictionary> = {
       soundcloudTitle: 'Playlist SoundCloud',
       soundcloudDesc: 'Catálogo contínuo de beats de Trap, Hip Hop e Rap no perfil oficial.',
       youtubeTitle: 'Playlist YouTube',
-      youtubeDesc:
-        'Instrumentais visuais com carregamento sob demanda — clique para montar o player.',
+      youtubeDesc: 'Beats oficiais acompanhados de visualizers originais. Assista no YouTube.',
       loadSoundCloud: 'Carregar Player SoundCloud',
       closeEmbed: 'Fechar Player',
       watchChannel: 'Abrir Canal no YouTube',
@@ -71,7 +68,7 @@ export const translations: Record<Language, TranslationDictionary> = {
       soundcloudDesc:
         'Continuous Trap, Hip Hop, and Rap instrumental rotation from the official profile.',
       youtubeTitle: 'YouTube Playlist',
-      youtubeDesc: 'Visual beat showcase with click-to-load embed mounting.',
+      youtubeDesc: 'Official beats paired with original visualizers. Watch on YouTube.',
       loadSoundCloud: 'Load SoundCloud Player',
       closeEmbed: 'Close Player',
       watchChannel: 'Open YouTube Channel',

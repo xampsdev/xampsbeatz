@@ -3,13 +3,6 @@
 @theme {
   --font-display: "Outfit", ui-sans-serif, system-ui, sans-serif;
   --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
-  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
-  --color-glitch-pink: #FF0099;
-  --color-glitch-violet: #A81CFF;
-  --color-glitch-cyan: #00E5FF;
-  --color-glitch-gold: #FFD600;
-  --color-soundcloud: #FF5500;
-  --color-youtube: #FF0000;
 }
 
 @layer base {
@@ -27,33 +20,81 @@
   }
 }
 
-.font-display {
-  font-family: var(--font-display);
+.marquee-wrapper {
+  position: relative;
+  width: 100%;
+  height: clamp(6rem, 15vw, 10rem);
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  mix-blend-mode: screen; /* Makes the black background transparent */
 }
 
-.masked-wordmark {
-  color: transparent;
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-  background-position: center 40%;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: artworkPan 14s ease-in-out infinite alternate;
+.marquee-text {
+  position: absolute;
+  margin: 0;
+  min-width: 100%;
+  white-space: nowrap;
+  animation: marquee-scroll 16s infinite linear;
+  will-change: transform;
+  font-family: 'Archivo Narrow', 'Oswald', sans-serif;
+  font-size: clamp(4rem, 10vw, 8rem);
+  line-height: 1;
+  font-weight: 900; /* Max weight is required for the gooey volume */
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
-@keyframes artworkPan {
-  0% {
-    background-position: center 15%;
+.marquee-blur {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  background-color: #000000; /* MUST be pure black for the math to work */
+  background-image:
+    linear-gradient(to right, #FFFFFF, 1rem, transparent 50%),
+    linear-gradient(to left, #FFFFFF, 1rem, transparent 50%);
+  filter: contrast(15);
+  z-index: 1;
+}
+
+.marquee-blur .marquee-text {
+  color: #FFFFFF;
+  filter: blur(0.05em);
+}
+
+.marquee-clear {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* Make the top readable layer pure white */
+.marquee-clear .marquee-text {
+  color: #FFFFFF;
+}
+
+@keyframes marquee-scroll {
+  from {
+    transform: translateX(70%);
   }
-  100% {
-    background-position: center 85%;
+  to {
+    transform: translateX(-70%);
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .masked-wordmark {
+  .marquee-text {
     animation: none;
-    background-position: center center;
+    position: static;
+    min-width: auto;
+    transform: none;
+  }
+
+  .marquee-blur {
+    display: none;
   }
 }

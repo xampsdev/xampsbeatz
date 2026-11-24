@@ -24,7 +24,6 @@ function PortfolioContent() {
   const aboutReveal = useScrollReveal<HTMLElement>();
 
   const currentYear = new Date().getFullYear();
-  const artworkBgUrl = `${import.meta.env.BASE_URL}imagem/abstract-rainbow-glitch.webp`;
 
   return (
     <div id="top" className="min-h-screen bg-[#07070B] text-zinc-100">
@@ -69,15 +68,22 @@ function PortfolioContent() {
           </div>
 
           <div className="flex flex-col items-center justify-between text-center">
-            <div>
-              <div
-                className="masked-wordmark font-display text-5xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight leading-none select-none"
-                style={{ backgroundImage: `url(${artworkBgUrl})` }}
-              >
-                XAMPSBEATZ
+            <div className="w-full">
+              <div className="marquee-wrapper" role="region" aria-label="XAMPSBEATZ">
+                {/* Layer 1: The distorted/gooey liquid effect */}
+                <div className="marquee-blur" aria-hidden="true">
+                  <p className="marquee-text tracking-wider">XAMPSBEATZ — XAMPSBEATZ — </p>
+                </div>
+
+                {/* Layer 2: The crisp readable text layered on top */}
+                <div className="marquee-clear">
+                  <p className="marquee-text tracking-wider text-white">
+                    XAMPSBEATZ — XAMPSBEATZ —{' '}
+                  </p>
+                </div>
               </div>
 
-              <h1 className="mx-auto mt-6 max-w-2xl font-display text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white [text-wrap:balance] leading-[1.12]">
+              <h1 className="mx-auto mt-4 max-w-2xl font-display text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white [text-wrap:balance] leading-[1.12]">
                 {t.hero.headline}
               </h1>
 
