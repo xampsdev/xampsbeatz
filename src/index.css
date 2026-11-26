@@ -1,14 +1,14 @@
 @import "tailwindcss";
 
 @theme {
-  --font-display: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
   --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
 }
 
 @layer base {
   html {
     scroll-behavior: smooth;
-    background-color: #07070B;
+    background-color: #09090B;
     color: #f4f4f5;
     font-family: var(--font-sans);
   }
@@ -37,10 +37,10 @@
   white-space: nowrap;
   animation: marquee-scroll 16s infinite linear;
   will-change: transform;
-  font-family: 'Archivo Narrow', 'Oswald', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   font-size: clamp(4rem, 10vw, 8rem);
   line-height: 1;
-  font-weight: 900; /* Max weight is required for the gooey volume */
+  font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
@@ -97,4 +97,63 @@
   .marquee-blur {
     display: none;
   }
+}
+
+/* Organic & Fluid styling for LiteYouTubeEmbed without altering its React logic */
+.fluid-yt-frame .aspect-video {
+  background-color: #09090B;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 1.25rem;
+  overflow: hidden;
+  box-shadow: 0 0 32px rgba(0, 0, 0, 0.45);
+}
+
+.fluid-yt-frame button[aria-label] > div:last-child > span:first-child {
+  border-radius: 9999px;
+  background-color: rgba(9, 9, 11, 0.78);
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  color: #ffffff;
+  backdrop-filter: blur(10px);
+  transition: transform 300ms ease, background-color 300ms ease, color 300ms ease, border-color 300ms ease;
+}
+
+.fluid-yt-frame button[aria-label]:hover > div:last-child > span:first-child {
+  background-color: #00E5FF;
+  border-color: transparent;
+  color: #09090B;
+  transform: scale(1.08);
+}
+
+.fluid-yt-frame button[aria-label] > div:last-child > span:last-child {
+  border-radius: 9999px;
+  background-color: rgba(9, 9, 11, 0.72);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  padding: 0.45rem 1.15rem;
+  backdrop-filter: blur(10px);
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600;
+  color: #f4f4f5;
+  transition: border-color 300ms ease, color 300ms ease;
+}
+
+.fluid-yt-frame button[aria-label]:hover > div:last-child > span:last-child {
+  border-color: rgba(0, 229, 255, 0.45);
+  color: #ffffff;
+}
+
+.fluid-yt-frame .justify-end > button {
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.03);
+  padding: 0.45rem 1.15rem;
+  color: #f4f4f5;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600;
+  transition: background-color 300ms ease, color 300ms ease, border-color 300ms ease;
+}
+
+.fluid-yt-frame .justify-end > button:hover {
+  background-color: #00E5FF;
+  border-color: transparent;
+  color: #09090B;
 }

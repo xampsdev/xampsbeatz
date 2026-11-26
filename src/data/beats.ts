@@ -1,5 +1,6 @@
 import fallbackPlaylistCover from '../assets/images/beat_cover_midnight_trap_1794952748349.jpg';
 
+export const GITHUB_PROFILE_URL = 'https://github.com/xampsdev';
 export const SOUNDCLOUD_PLAYLIST_URL = 'https://soundcloud.com/xampsbeatz/sets/xampsbeatz';
 export const SOUNDCLOUD_PROFILE_URL = 'https://soundcloud.com/xampsbeatz';
 export const YOUTUBE_PLAYLIST_ID = 'PLzGW71UVkXlQhNErYKmaYYGoaLG0j3XTU';
